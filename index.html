@@ -14,15 +14,27 @@
 
 
 <body> <header>
+  <div class="nav-container" style="background-color: brown;">
   <nav>
    <a href="index.html" class="tituloPrincipal"><h1 class="tituloPrincipal">Libreria Cristiana</h1></a>
-  <div>
-   <a href="#" id="CarroLink"><img src="assets/img/carrito.png" alt="carrito" class="logoCarrito"> <span id="cuentaCarrito">0</span>
+
+ <!-- modal carrito -->
+ <div  id="modal-container" class="modal-container">
+ <a href="#" id="CarroLink" ><img src="assets/img/carrito.png" alt="carrito"  class="logoCarrito"> <span id="cuentaCarrito">0</span>
   </a> 
 </div>
 </nav>
+</div>
 </header>
-    <script src="js/index.js"></script>
-    <script src="js/cards.js"></script>
+
+<!-- libreria contenido -->
+
+<div id="bookshopContent" class="book-content"></div>
+
+
+
+    <script src="productos.js"></script>
+    <script src="index.js"></script>
+   
 </body>
 </html>

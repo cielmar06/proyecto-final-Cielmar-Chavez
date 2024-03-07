@@ -6,16 +6,12 @@
 body{
     background-image:  url(assets/img/pared\ blanca.jpg)
 }
-header{box-shadow: 0 3px 5px rgba(0,0,0,0.115);}
 
-header nav { display: flex;
-justify-content: space-between;
-margin: 20px;}
-header nav div{ 
- margin: 20px;
-position: relative;}
+
 
 .nav-container{
+
+    box-shadow: 0 3px 5px rgba(0,0,0,0.115);
     position: sticky;
     z-index: 3;
     top: 0;
@@ -34,22 +30,33 @@ position: relative;}
     padding: 5px;
     transition: all 800ms ease-in}
 
+.navbar{ display: flex;
+justify-content: space-between;
+height: 8vh;
+background-color: brown;}
 
-.logoCarrito{
-    width: 50px;
-   margin-top: 5px;
+.ver-carrito{
+    font-size: 3rem;
+    margin-right: 20px;
+    margin-top: 3vh;
+    cursor: pointer;
+    overflow: hidden;
+    
+    
 }
+
 a{ text-decoration: none;}
 
-#cuentaCarrito{
- background-color: aqua;
-border-radius: 100%;
-display: inline-block;
-width: 20px;
-line-height: 20px;
-aspect-ratio: 1;
-text-align: center;
+.cantidad-carrito{ 
+background-color: aqua;
+ color: black;
+ font-size: 13px;
+border-radius: 10%0%;
+padding: 3px;
+top: 37px;
+right: 13px;
 position: absolute;
+display: none;
 }
 /* bookshop */
 .book-content{
@@ -67,7 +74,7 @@ position: absolute;
     margin: auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     max-width: 500px;
-    margin: 20px;
+    margin: 20px; 
     background-color: white;
 
 }
@@ -96,4 +103,59 @@ position: absolute;
 }
 .card button:hover{
     opacity: 0.6;
+}
+/* modal styles */
+
+.modal-container{
+    width: 80%;
+    margin: 0 10%;
+    max-height:88vh ;
+    color: blanchedalmond;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top:13vh;
+    scrollbar-color: none;
+}
+
+.modal-container::-webkit-scrollbar{
+    display: none;
+}
+.modal-header{
+    display: flex;
+    justify-content: space-around ;
+    background-color: rgb(191, 33, 33);
+    color: antiquewhite;
+    width: 100%;
+}
+.modal-header-title{
+    justify-self: start;
+}
+.modal-header-button{
+    cursor: pointer;
+}
+.modal-container  > .modal-content{display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+width: 70%;
+margin: 10px;}
+.modal-container > div > img{
+    height: 120px;
+    width: 120px;
+
+}
+.total-content{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+.delete-product{
+    cursor: pointer;
 }

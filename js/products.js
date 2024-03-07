@@ -6,8 +6,8 @@
     nombre: "Biblia bilingue",
     precio: 45.000,
     img: "https://i.ibb.co/jrsPb4Q/biblia-bilingue.webp",
-    autor: "muchos autores"
-
+    autor: "muchos autores",
+    cantidad: 1
 
     },
 

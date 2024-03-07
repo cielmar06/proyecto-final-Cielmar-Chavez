@@ -6,8 +6,10 @@
 //getProductos();
 
 const bookshopContent= document.getElementById("bookshopContent")
-const CarroLink=document.getElementById("CarroLink")
-const modalContainer=document.getElementById("modal-container")
+const verCarrito=document.getElementById("verCarrito")
+const modalContainer=document.getElementById("modalContainer")
+const cantidadCarrito=document.getElementById("cantidadCarrito")
+
 let carrito=[];
 
 productos.forEach((product)=>{ 
@@ -25,32 +27,34 @@ productos.forEach((product)=>{
    content.append(comprar);
 
    comprar.addEventListener("click", ()=>{
-    carrito.push({ id:product.id,
+    const repeat= carrito.some((repeatProduct)=>repeatProduct.id === product.id)
+    if(repeat){
+      carrito.map((prod)=>{
+        if(prod.id===product.id){
+          prod.cantidad ++;
+        }
+      });
+     } else{
+    
+
+    carrito.push({ 
+      id:product.id,
       img: product.img,
       nombre:product.nombre,
       precio: product.precio,
       autor:product.autor,
+      cantidad:product.cantidad,
 
     });
+  }
     
     console.log(carrito);
+    carritoCounter();
 
    });
    
   
 
    })
-   CarroLink.addEventListener("click", ()=>{
-    const modalHeader= document.createElement("div")
-    modalHeader.className="modal-header"
-    modalHeader.innerHTML=` <h1 class="modal-header-title">Carrito.</h1>`;
-    modalContainer.append(modalHeader);
-    const modalbutton=document.createElement("h1");
-    modalbutton.innerText= "x";
-    modalbutton.className= "modal-header-button";
-
-    modalHeader.append(modalbutton);
-
-});
-
+   
 

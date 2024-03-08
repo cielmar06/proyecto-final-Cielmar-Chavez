@@ -51,7 +51,7 @@ a{ text-decoration: none;}
 background-color: aqua;
  color: black;
  font-size: 13px;
-border-radius: 10%0%;
+border-radius: 100%;
 padding: 3px;
 top: 37px;
 right: 13px;
@@ -159,3 +159,8 @@ margin: 10px;}
 .delete-product{
     cursor: pointer;
 }
+
+.sumar{
+    cursor: pointer;
+}
+.restar{ cursor: pointer;}

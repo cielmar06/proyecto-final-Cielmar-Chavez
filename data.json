@@ -1,0 +1,87 @@
+[
+    {
+            
+        "id":1,
+        "nombre": "Biblia bilingue",
+        "precio": 45.000,
+        "img": "https://i.ibb.co/jrsPb4Q/biblia-bilingue.webp",
+        "autor": "muchos autores"
+    
+    
+        },
+    
+        { "id":2,
+    "nombre": "biblia con himnario",
+    "precio": 26.000,
+    "img":"https://i.ibb.co/WPnX3hr/biblia-con-himnario.webp",
+    "autor":"muchos autores",
+    "cantidad":1
+    },
+    
+    
+    { "id":3,
+    "nombre":"biblia jovenes",
+    "precio": 17.000,
+    "img":"https://i.ibb.co/TtpnnF3/biblia-jovenes.webp",
+    "autor":"muchos autores",
+    "cantidad":1
+    },
+    
+    { "id":4,
+    "nombre":"devocional adultos",
+    "precio":4.500,
+    "img":"https://i.ibb.co/HxKh2xf/devocional-adultos.webp",
+    "autor":"Roberto Herrera",
+    "cantidad":1
+    },
+    
+    { "id":5,
+    "nombre":"devocional jovenes",
+    "precio": 5.500,
+    "img":"https://i.ibb.co/DMqKTrV/devocional-jovenes.webp",
+    "autor":"Olivia Gold",
+    "cantidad":1
+    },
+    
+    
+    { "id":6,
+    "nombre":"devocional adolescentes",
+    "precio":6.000,
+    "img":"https://i.ibb.co/hFMYzPf/devocional-adolescente.webp",
+    "autor": "mayara Lustosa y Rodrigo Barbosa",
+    "cantidad":1
+    },
+    
+    
+    { "id":7,
+    "nombre":"devocional niños",
+    "precio":3.000,
+    "img":"https://i.ibb.co/vQYTWdK/devocional-ni-os.webp",
+    "autor":"Vicki Redden, Dee Litten Reed y Joelle Reed Yamada",
+    "cantidad":1
+    },
+    
+    { "id":8,
+    "nombre":"el camino a Cristo",
+    "precio": 10.000,
+    "img":"https://i.ibb.co/1QVvjKF/el-camino-a-cristo.webp",
+    "autor":"Elena de White",
+    "cantidad":1
+    },
+    
+    { "id":9,
+    "nombre":"el conflito de los siglos ",
+    "precio": 15.000,
+    "img":"https://i.ibb.co/Jx552jS/El-conflicto-de-los-siglos.webp",
+    "autor":"Elena de White",
+    "cantidad":1
+    },
+    
+    { "id":10,
+    "nombre": "manos consagradas",
+    "precio":25.000,
+    "img": "https://i.ibb.co/RDfSLrW/manos-consagradas.webp",
+    "autor":"Ben Carson",
+    "cantidad":1
+    }
+    ]
